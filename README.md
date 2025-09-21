@@ -104,7 +104,7 @@ for development and testing purposes.
     your system.
 2.  **Clone the Repository:**
     ```bash
-    git clone [repository-url]
+    git clone https://github.com/franBec/vista
     cd vista
     ```
 3.  **Install Dependencies:**
