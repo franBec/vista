@@ -7,31 +7,34 @@ export default function Home() {
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            VISTA
+            Welcome to Municipal Services
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-            Your Digital Gateway to Seamless Municipal Management
+            Your Digital Gateway to Local Government Services
           </p>
           <p className="text-lg mb-12">
-            A modern, user-friendly digital platform designed to streamline interactions between citizens and their local government.
+            Access municipal services, submit requests, and manage your civic obligations through our secure online platform.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button className="px-6 py-3 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors">
-              Get Started
+              Log In to Your Account
             </button>
             <button className="px-6 py-3 border border-input rounded-md font-medium hover:bg-accent hover:text-accent-foreground transition-colors">
-              Learn More
+              Continue Without Logging In
             </button>
           </div>
+          <p className="text-sm text-muted-foreground mt-6 max-w-md">
+            Note: Some administrative processes require a registered account and may not be available to guests.
+          </p>
         </div>
       </div>
 
-      {/* Why VISTA Section */}
+      {/* Why Our Digital Services */}
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-16 max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why VISTA?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Our Digital Services?</h2>
           <p className="text-lg text-muted-foreground">
-            Transforming municipal services for the digital age
+            Improving access to government services for all residents
           </p>
         </div>
         
@@ -95,38 +98,37 @@ export default function Home() {
                 <path d="m17 5-5 5-5-5"/>
               </svg>
             </div>
-            <h3 className="text-xl font-semibold mb-2">Sustainability</h3>
+            <h3 className="text-xl font-semibold mb-2">Security</h3>
             <p className="text-muted-foreground">
-              Contribute to a paperless environment and reduced carbon footprint
+              Secure handling of personal information and government data
             </p>
           </div>
         </div>
       </div>
 
-      {/* About Section */}
+      {/* About Our Digital Services */}
       <div className="container mx-auto px-4 py-16">
         <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
           <div className="lg:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">About VISTA</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">About Our Digital Services</h2>
             <div className="space-y-6">
               <p className="text-lg">
-                <strong>VISTA</strong> stands for <strong>Virtual Integrated System for Town Administration</strong>. 
-                This is a personal project to build a modern, user-friendly digital platform designed to 
-                streamline interactions between citizens and their local government.
+                Our digital platform provides a modern, user-friendly solution designed to 
+                streamline interactions between citizens and local government services.
               </p>
               <p className="text-lg">
-                VISTA aims to empower residents to manage their municipal obligations and requests entirely 
+                We aim to empower residents to manage their municipal obligations and requests entirely 
                 online, eliminating the need for physical visits and significantly reducing administrative overhead.
               </p>
               <p className="text-lg">
-                My long-term vision is for VISTA to potentially serve as a robust, customizable template that 
-                other organizations can adapt for their specific municipal needs.
+                Our long-term vision is to provide a robust, customizable platform that 
+                serves the needs of our community and other municipalities.
               </p>
             </div>
           </div>
           <div className="lg:w-1/2 flex justify-center">
             <div className="bg-card border border-border rounded-lg p-8 w-full max-w-md">
-              <h3 className="text-2xl font-semibold mb-4">Project Goals</h3>
+              <h3 className="text-2xl font-semibold mb-4">Service Offerings</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <div className="bg-primary rounded-full p-1 mt-1 mr-3">
@@ -134,7 +136,7 @@ export default function Home() {
                       <polyline points="20 6 9 17 4 12"/>
                     </svg>
                   </div>
-                  <span>Recreate citizen registration process</span>
+                  <span>Citizen registration and account management</span>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-primary rounded-full p-1 mt-1 mr-3">
@@ -142,7 +144,7 @@ export default function Home() {
                       <polyline points="20 6 9 17 4 12"/>
                     </svg>
                   </div>
-                  <span>Modern UI with Tailwind CSS and shadcn</span>
+                  <span>Online permit applications and renewals</span>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-primary rounded-full p-1 mt-1 mr-3">
@@ -150,7 +152,7 @@ export default function Home() {
                       <polyline points="20 6 9 17 4 12"/>
                     </svg>
                   </div>
-                  <span>Secure authentication with Clerk</span>
+                  <span>Utility billing and payments</span>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-primary rounded-full p-1 mt-1 mr-3">
@@ -158,7 +160,7 @@ export default function Home() {
                       <polyline points="20 6 9 17 4 12"/>
                     </svg>
                   </div>
-                  <span>PostgreSQL database with Drizzle ORM</span>
+                  <span>Public records access and requests</span>
                 </li>
               </ul>
             </div>
@@ -171,26 +173,26 @@ export default function Home() {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
-              <h3 className="text-2xl font-bold">VISTA</h3>
-              <p className="text-muted-foreground">Virtual Integrated System for Town Administration</p>
+              <h3 className="text-2xl font-bold">Municipal Services</h3>
+              <p className="text-muted-foreground">Digital Government Platform</p>
             </div>
             <div className="flex flex-col items-center md:items-end">
-              <p className="text-muted-foreground">A project by Franco Exequiel Becvort</p>
+              <p className="text-muted-foreground">Provided by the Department of Innovation</p>
               <div className="flex gap-4 mt-2">
-                <a href="mailto:franbecvort@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Email
+                <a href="mailto:support@municipal.gov" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Contact Support
                 </a>
-                <a href="https://pollito.dev/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Website
+                <a href="/privacy" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Privacy Policy
                 </a>
-                <a href="https://linkedin.com/in/franco-becvort" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
-                  LinkedIn
+                <a href="/terms" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Terms of Service
                 </a>
               </div>
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-            <p>Licensed under the MIT License</p>
+            <p>© {new Date().getFullYear()} Municipal Government. All rights reserved.</p>
           </div>
         </div>
       </footer>
