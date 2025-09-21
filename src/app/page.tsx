@@ -1,8 +1,13 @@
-import Image from "next/image";
+import { ModeToggle } from "@/components/theme/mode-toggle";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      {/* Header with Dark Mode Toggle */}
+      <header className="absolute top-4 right-4">
+        <ModeToggle />
+      </header>
+      
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
