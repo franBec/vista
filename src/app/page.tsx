@@ -2,101 +2,195 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-background text-foreground">
+      {/* Hero Section */}
+      <div className="container mx-auto px-4 py-16 md:py-24">
+        <div className="flex flex-col items-center text-center">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            VISTA
+          </h1>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl">
+            Your Digital Gateway to Seamless Municipal Management
+          </p>
+          <p className="text-lg mb-12 max-w-3xl">
+            A modern, user-friendly digital platform designed to streamline interactions between citizens and their local government.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <button className="px-6 py-3 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors">
+              Get Started
+            </button>
+            <button className="px-6 py-3 border border-input rounded-md font-medium hover:bg-accent hover:text-accent-foreground transition-colors">
+              Learn More
+            </button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </div>
+
+      {/* Why VISTA Section */}
+      <div className="container mx-auto px-4 py-16">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why VISTA?</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Transforming municipal services for the digital age
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg border border-border">
+            <div className="bg-primary/10 p-3 rounded-full mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                <path d="M12 2v20"/>
+                <path d="m17 5-5 5-5-5"/>
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Convenience</h3>
+            <p className="text-muted-foreground">
+              24/7 access to municipal services from anywhere
+            </p>
+          </div>
+          
+          <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg border border-border">
+            <div className="bg-primary/10 p-3 rounded-full mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                <path d="M12 2v20"/>
+                <path d="m17 5-5 5-5-5"/>
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Efficiency</h3>
+            <p className="text-muted-foreground">
+              Streamline administrative processes and reduce wait times
+            </p>
+          </div>
+          
+          <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg border border-border">
+            <div className="bg-primary/10 p-3 rounded-full mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                <path d="M12 2v20"/>
+                <path d="m17 5-5 5-5-5"/>
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Transparency</h3>
+            <p className="text-muted-foreground">
+              Easily track the progress of requests and access information
+            </p>
+          </div>
+          
+          <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg border border-border">
+            <div className="bg-primary/10 p-3 rounded-full mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                <path d="M12 2v20"/>
+                <path d="m17 5-5 5-5-5"/>
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Accessibility</h3>
+            <p className="text-muted-foreground">
+              A user-friendly interface designed for all citizens
+            </p>
+          </div>
+          
+          <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg border border-border">
+            <div className="bg-primary/10 p-3 rounded-full mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                <path d="M12 2v20"/>
+                <path d="m17 5-5 5-5-5"/>
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Sustainability</h3>
+            <p className="text-muted-foreground">
+              Contribute to a paperless environment and reduced carbon footprint
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* About Section */}
+      <div className="container mx-auto px-4 py-16">
+        <div className="flex flex-col lg:flex-row items-center gap-12">
+          <div className="lg:w-1/2">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">About VISTA</h2>
+            <p className="text-lg mb-6">
+              <strong>VISTA</strong> stands for <strong>Virtual Integrated System for Town Administration</strong>. 
+              This is a personal project to build a modern, user-friendly digital platform designed to 
+              streamline interactions between citizens and their local government.
+            </p>
+            <p className="text-lg mb-6">
+              VISTA aims to empower residents to manage their municipal obligations and requests entirely 
+              online, eliminating the need for physical visits and significantly reducing administrative overhead.
+            </p>
+            <p className="text-lg">
+              My long-term vision is for VISTA to potentially serve as a robust, customizable template that 
+              other organizations can adapt for their specific municipal needs.
+            </p>
+          </div>
+          <div className="lg:w-1/2 flex justify-center">
+            <div className="bg-card border border-border rounded-lg p-8 w-full max-w-md">
+              <h3 className="text-2xl font-semibold mb-4">Project Goals</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <div className="bg-primary rounded-full p-1 mt-1 mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary-foreground">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </div>
+                  <span>Recreate citizen registration process</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="bg-primary rounded-full p-1 mt-1 mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary-foreground">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </div>
+                  <span>Modern UI with Tailwind CSS and shadcn</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="bg-primary rounded-full p-1 mt-1 mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary-foreground">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </div>
+                  <span>Secure authentication with Clerk</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="bg-primary rounded-full p-1 mt-1 mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary-foreground">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </div>
+                  <span>PostgreSQL database with Drizzle ORM</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <footer className="border-t border-border py-12">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-6 md:mb-0">
+              <h3 className="text-2xl font-bold">VISTA</h3>
+              <p className="text-muted-foreground">Virtual Integrated System for Town Administration</p>
+            </div>
+            <div className="flex flex-col items-center md:items-end">
+              <p className="text-muted-foreground">A project by Franco Exequiel Becvort</p>
+              <div className="flex gap-4 mt-2">
+                <a href="mailto:franbecvort@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Email
+                </a>
+                <a href="https://pollito.dev/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Website
+                </a>
+                <a href="https://linkedin.com/in/franco-becvort" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
+            <p>Licensed under the MIT License</p>
+          </div>
+        </div>
       </footer>
     </div>
   );
