@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,23 +27,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
+    <ClerkProvider>
+      <html lang="en" suppressHydrationWarning>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
         >
-          <Header />
-          <main className="flex-grow">
-            <div className="container mx-auto px-4 max-w-6xl">{children}</div>
-          </main>
-          <Footer />
-        </ThemeProvider>
-      </body>
-    </html>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header />
+            <main className="flex-grow">
+              <div className="container mx-auto px-4 max-w-6xl">{children}</div>
+            </main>
+            <Footer />
+          </ThemeProvider>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

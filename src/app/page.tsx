@@ -19,13 +19,9 @@ export default function Home() {
             obligations through our secure online platform.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button>
-              Log In to Your Account
-            </Button>
+            <Button>Log In to Your Account</Button>
             <Link href={"/areas"}>
-              <Button variant="outline">
-                Continue Without Logging In
-              </Button>
+              <Button variant="outline">Continue Without Logging In</Button>
             </Link>
           </div>
           <p className="text-sm text-muted-foreground mt-6 max-w-md">
