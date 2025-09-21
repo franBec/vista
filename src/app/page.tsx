@@ -1,7 +1,11 @@
+"use client";
+
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Hero Section */}
       <div className="py-16 md:py-24">
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -15,12 +19,14 @@ export default function Home() {
             obligations through our secure online platform.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="px-6 py-3 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors">
+            <Button>
               Log In to Your Account
-            </button>
-            <button className="px-6 py-3 border border-input rounded-md font-medium hover:bg-accent hover:text-accent-foreground transition-colors">
-              Continue Without Logging In
-            </button>
+            </Button>
+            <Link href={"/areas"}>
+              <Button variant="outline">
+                Continue Without Logging In
+              </Button>
+            </Link>
           </div>
           <p className="text-sm text-muted-foreground mt-6 max-w-md">
             Note: Some administrative processes require a registered account and
@@ -29,7 +35,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Why Our Digital Services */}
       <div className="py-16">
         <div className="text-center mb-16 max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -163,7 +168,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* About Our Digital Services */}
       <div className="py-16">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
