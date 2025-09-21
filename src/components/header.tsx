@@ -8,21 +8,17 @@ import {
   SignUpButton,
   UserButton,
 } from "@clerk/nextjs";
-import {Button} from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 
 export function Header() {
   return (
-      <header className="flex justify-end items-center p-4 gap-4 h-16">
+    <header className="flex justify-end items-center p-4 gap-4 h-16">
       <SignedOut>
-          <SignInButton>
-              <Button variant={"default"}>
-                  Sign In
-              </Button>
-          </SignInButton>
+        <SignInButton>
+          <Button variant={"default"}>Sign In</Button>
+        </SignInButton>
         <SignUpButton>
-          <Button variant={"outline"}>
-            Sign Up
-          </Button>
+          <Button variant={"outline"}>Sign Up</Button>
         </SignUpButton>
       </SignedOut>
       <SignedIn>
