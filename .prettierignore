@@ -1,0 +1,22 @@
+# Build artifacts
+.next
+out
+
+# Dependencies
+node_modules
+
+# Logs
+*.log
+
+# Environment files
+.env*
+
+# IDE and editor files
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
