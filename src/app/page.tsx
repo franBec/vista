@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -19,9 +17,11 @@ export default function Home() {
             obligations through our secure online platform.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button>Log In to Your Account</Button>
-            <Link href={"/areas"}>
-              <Button variant="outline">Continue Without Logging In</Button>
+            <Link href={"/sign-in"}>
+              <Button>Sign In to Your Account</Button>
+            </Link>
+            <Link href={"/areas/gov"}>
+              <Button variant="outline">Continue Without Signing In</Button>
             </Link>
           </div>
           <p className="text-sm text-muted-foreground mt-6 max-w-md">

@@ -1,4 +1,3 @@
-import { areas } from "@/lib/areas";
 import {
   Card,
   CardContent,
@@ -6,41 +5,59 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Link from "next/link";
+import { Building, User } from "lucide-react";
 
-export default function Areas() {
+export default function AreasPage() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      {/* Header */}
-      <div className="py-16">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Municipal Areas
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Explore the different departments and services provided by our local
-            government
-          </p>
-        </div>
+    <div className="container mx-auto py-8">
+      <div className="mb-8">
+        <h1 className="text-3xl font-bold">Areas</h1>
+        <p className="text-muted-foreground">
+          Select an area to view its details
+        </p>
+      </div>
 
-        {/* Areas Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {areas.map(area => {
-            const Icon = area.icon;
-            return (
-              <Card key={area.id} className="flex flex-col">
-                <CardHeader className="flex flex-row items-center gap-4">
-                  <div className="bg-primary/10 p-3 rounded-full">
-                    <Icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <CardTitle className="text-xl">{area.name}</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <CardDescription>{area.description}</CardDescription>
-                </CardContent>
-              </Card>
-            );
-          })}
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Government Areas Card */}
+        <Card className="hover:shadow-md transition-shadow">
+          <Link href="/areas/gov" className="block h-full">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Building className="h-6 w-6" />
+                Government Areas
+              </CardTitle>
+              <CardDescription>
+                View and manage government-related areas and their information
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="text-sm text-muted-foreground">
+                Access government data, regulations, and official information
+              </div>
+            </CardContent>
+          </Link>
+        </Card>
+
+        {/* Personal Areas Card */}
+        <Card className="hover:shadow-md transition-shadow">
+          <Link href="/areas/personal" className="block h-full">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <User className="h-6 w-6" />
+                Personal Info
+              </CardTitle>
+              <CardDescription>
+                Manage your personal information and private data
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="text-sm text-muted-foreground">
+                View and update your personal details and preferences
+              </div>
+            </CardContent>
+          </Link>
+        </Card>
       </div>
     </div>
   );

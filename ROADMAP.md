@@ -14,9 +14,9 @@ This document outlines the planned development tasks and milestones for the VIST
   - [x] Tweak shadcn theme with "Modern Minimal" theme from tweakcn.com
   - [ ] Add `src/components/theme` and `src/components/ui` to prettier ignore
 - [x] Landing page
-- [ ] A "citizen area" page
-  - [ ] Done, but wrong URI, currently is "/areas" - should be "/areas/citizen"
+- [x] A "citizen area" page
 - [x] Extract components and implement layout for consistent structure across pages
+- [ ] Create a "route" file in which I declare the routes structure, with some content (title, description), if it requires login to be viewed, if it should be displayed in sidebar, etc. (add things as needed)
 
 ## Auth: Clerk Initial Setup
 - [x] Follow Clerk "Next.js Quickstart (App Router)" - [Clerk Docs](https://clerk.com/docs/quickstarts/nextjs)
