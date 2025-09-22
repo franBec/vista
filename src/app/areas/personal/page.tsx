@@ -1,25 +1,5 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { RoutePage } from "@/components/route-page";
 
 export default function PersonalInfoPage() {
-  return (
-    <div className="container mx-auto py-8">
-      <Card>
-        <CardHeader>
-          <CardTitle>Personal Information</CardTitle>
-          <CardDescription>
-            This page will display your personal information and settings
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p>Your personal information will be displayed here.</p>
-        </CardContent>
-      </Card>
-    </div>
-  );
+  return <RoutePage uri="/areas/personal" />;
 }
