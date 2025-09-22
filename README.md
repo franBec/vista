@@ -9,11 +9,12 @@
 1.  [About VISTA](#about-vista)
 2.  [Inspiration, Philosophy, & Learning Goals](#inspiration-philosophy--learning-goals)
 3.  [Initial Key Features](#initial-key-features)
-4.  [Why VISTA?](#why-vista)
-5.  [Getting Started](#getting-started)
-6.  [Technology Stack](#technology-stack)
-7.  [License](#license)
-8.  [Creator & Contact](#creator--contact)
+4.  [Project Roadmap](#project-roadmap)
+5.  [Why VISTA?](#why-vista)
+6.  [Getting Started](#getting-started)
+7.  [Technology Stack](#technology-stack)
+8.  [License](#license)
+9.  [Creator & Contact](#creator--contact)
 
 ---
 
@@ -84,7 +85,11 @@ Future features will be added incrementally based on my personal interest and
 evolving criteria, building out a more comprehensive suite of municipal services
 as the project progresses.
 
-## 4. Why VISTA?
+## 4. Project Roadmap
+
+For a detailed view of the project's planned development tasks and milestones, please refer to our [ROADMAP.md](ROADMAP.md) file. This document serves as a guide for tracking progress and setting future goals, with a task-oriented approach that follows the project's learning objectives and implementation phases.
+
+## 5. Why VISTA?
 
 - **Convenience:** The ultimate goal is to provide 24/7 access to municipal
   services from anywhere.
@@ -95,7 +100,7 @@ as the project progresses.
 - **Sustainability:** Contribute to a paperless environment and reduced carbon
   footprint.
 
-## 5. Getting Started
+## 6. Getting Started
 
 This section will provide instructions on how to set up and run VISTA locally
 for development and testing purposes.
@@ -120,7 +125,7 @@ for development and testing purposes.
 _(Detailed instructions and specific commands will be refined as the project
 progresses.)_
 
-## 6. Technology Stack
+## 7. Technology Stack
 
 VISTA is being developed as a Next.js monolith, leveraging a modern and robust
 stack to ensure scalability, security, and a great user experience, while also
@@ -135,12 +140,12 @@ serving as a learning playground for new technologies:
 - **Deployment:** Managed on a Virtual Private Server (VPS) via Coolify
   (self-hosted Heroku/Netlify alternative)
 
-## 7. License
+## 8. License
 
 This project is licensed under the **MIT License** - see the `LICENSE` file for
 details.
 
-## 8. Creator & Contact
+## 9. Creator & Contact
 
 VISTA is a personal project by **Franco Exequiel Becvort**.
 
