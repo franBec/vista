@@ -22,9 +22,9 @@ This document outlines the planned development tasks and milestones for the VIST
 ## Auth: Clerk Initial Setup
 - [x] Follow Clerk "Next.js Quickstart (App Router)" - [Clerk Docs](https://clerk.com/docs/quickstarts/nextjs)
   - [x] Make "/" and citizen area public routes
-- [ ] Follow Clerk "Build your own sign-in-or-up page for your Next.js app with Clerk" - [Clerk Docs](https://clerk.com/docs/references/nextjs/custom-sign-in-or-up-page)
+- [x] Follow Clerk "Build your own sign-in-or-up page for your Next.js app with Clerk" - [Clerk Docs](https://clerk.com/docs/references/nextjs/custom-sign-in-or-up-page)
   - [x] Follow up with "Clerk Build your own sign-up page for your Next.js app with Clerk" - [Clerk Docs](https://clerk.com/docs/references/nextjs/custom-sign-up-page)
-  - [ ] Customize `src/app/sign-in/[[...sign-in]]/page.tsx` and `src/app/sign-up/[[...sign-up]]/page.tsx`
+  - [x] Customize `src/app/sign-in/[[...sign-in]]/page.tsx` and `src/app/sign-up/[[...sign-up]]/page.tsx`
 - [x] Create a private page
   - [x] For example: "/areas/personal"
 
@@ -45,7 +45,7 @@ This document outlines the planned development tasks and milestones for the VIST
 - [ ] Unit testing
 - [ ] Mutation testing
 
-## Citizen Onboarding
+## Account Onboarding
 - [ ] Follow Clerk "Add custom onboarding to your authentication flow" - [Clerk Docs](https://clerk.com/docs/references/nextjs/add-onboarding-flow)
 - [ ] Create an onboarding form
   - [ ] Call the action previously defined
@@ -55,7 +55,7 @@ This document outlines the planned development tasks and milestones for the VIST
 - [ ] Deploy this project to Coolify
 
 ## Citizen Proof of Identity
-- [ ] This is by no intent an automated proof thing. Is meant to be manual review by an admin so it can avoid fake citizen profiles
+This is by no intent an automated proof thing. Is meant to be manual review by an admin so it can avoid fake citizen profiles
 - [ ] Improve the onboarding so now it asks for the citizen ID front and back photos
   - [ ] No idea where to save these photos. Considering doing file management in my own VPS (some kind of Coolify S3 clone) or using a third-party like UploadThing
 - [ ] The citizen even though is onboarded, now is also in a state of "pending verification"

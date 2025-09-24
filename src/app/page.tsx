@@ -7,7 +7,7 @@ export default function Home() {
       <div className="py-16 md:py-24">
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Welcome to Municipal Services
+            Municipal Services
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
             Your Digital Gateway to Local Government Services
@@ -28,6 +28,18 @@ export default function Home() {
             Note: Some administrative processes require a registered account and
             may not be available to guests.
           </p>
+        </div>
+      </div>
+
+      <div className="py-8">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="flex justify-center">
+            <img
+              src="/undraw_city-life_l74x.svg"
+              alt="City life illustration"
+              className="w-full max-w-4xl"
+            />
+          </div>
         </div>
       </div>
 

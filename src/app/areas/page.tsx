@@ -1,5 +1,5 @@
 import { RoutePage } from "@/components/route-page";
 
-export default function AreasPage() {
-  return <RoutePage uri="/areas" />;
+export default function Page() {
+  return <RoutePage.Auto uri="/areas" />;
 }

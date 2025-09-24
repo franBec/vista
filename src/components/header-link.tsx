@@ -11,7 +11,7 @@ export function HeaderLink() {
         <Building className="size-4" />
       </div>
       <div className="flex flex-col gap-0.5 leading-none">
-        <span className="font-medium">Municipal Services</span>
+        <span className="font-bold text-lg">Municipal Services</span>
       </div>
     </Link>
   );
