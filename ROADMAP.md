@@ -9,14 +9,15 @@ This document outlines the planned development tasks and milestones for the VIST
 - [x] MIT License
 - [x] Use src directory structure
 - [x] Prettier
-- [ ] Setup shadcn/ui components
+- [x] Setup shadcn/ui components
   - [x] Dark mode
   - [x] Tweak shadcn theme with "Modern Minimal" theme from tweakcn.com
-  - [ ] Add `src/components/theme` and `src/components/ui` to prettier ignore
+  - [x] Add `src/components/theme` and `src/components/ui` to prettier ignore
 - [x] Landing page
 - [x] A "citizen area" page
 - [x] Extract components and implement layout for consistent structure across pages
-- [ ] Create a "route" file in which I declare the routes structure, with some content (title, description), if it requires login to be viewed, if it should be displayed in sidebar, etc. (add things as needed)
+- [x] Create a "route" file in which I declare the routes structure, with some content (title, description), if it requires login to be viewed, if it should be displayed in sidebar, etc. (add things as needed)
+  - [x] Create a Sidebar that reads the routes
 
 ## Auth: Clerk Initial Setup
 - [x] Follow Clerk "Next.js Quickstart (App Router)" - [Clerk Docs](https://clerk.com/docs/quickstarts/nextjs)
@@ -24,8 +25,8 @@ This document outlines the planned development tasks and milestones for the VIST
 - [ ] Follow Clerk "Build your own sign-in-or-up page for your Next.js app with Clerk" - [Clerk Docs](https://clerk.com/docs/references/nextjs/custom-sign-in-or-up-page)
   - [x] Follow up with "Clerk Build your own sign-up page for your Next.js app with Clerk" - [Clerk Docs](https://clerk.com/docs/references/nextjs/custom-sign-up-page)
   - [ ] Customize `src/app/sign-in/[[...sign-in]]/page.tsx` and `src/app/sign-up/[[...sign-up]]/page.tsx`
-- [ ] Create a private page
-  - [ ] For example: "/areas/personal"
+- [x] Create a private page
+  - [x] For example: "/areas/personal"
 
 ## Database and ORM
 - [ ] Create a dev folder, in it create a docker-compose.yaml which will contain a postgres db and pgadmin4

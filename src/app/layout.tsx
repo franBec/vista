@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ClerkProvider } from "@clerk/nextjs";
+import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/app-sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,11 +40,18 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <Header />
-            <main className="flex-grow">
-              <div className="container mx-auto px-4 max-w-6xl">{children}</div>
-            </main>
-            <Footer />
+            <SidebarProvider>
+              <AppSidebar />
+              <SidebarInset>
+                <Header />
+                <main className="flex-grow">
+                  <div className="container mx-auto px-4 max-w-6xl">
+                    {children}
+                  </div>
+                </main>
+                <Footer />
+              </SidebarInset>
+            </SidebarProvider>
           </ThemeProvider>
         </body>
       </html>
