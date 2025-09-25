@@ -27,3 +27,6 @@ Thumbs.db
 # shadcn components
 src/components/theme
 src/components/ui
+
+# drizzle pull generated files
+drizzle

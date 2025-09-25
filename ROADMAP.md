@@ -29,13 +29,13 @@ This document outlines the planned development tasks and milestones for the VIST
   - [x] For example: "/areas/personal"
 
 ## Database and ORM
-- [ ] Create a dev folder, in it create a docker-compose.yaml which will contain a postgres db and pgadmin4
-  - [ ] Configure a user with access limited to the public schema
-    - (Instead of using the default postgres superuser or other admin accounts) is a security and operational best practice
-- [ ] Create also in this dev folder a .env example. Indicate in README.md the existence of this folder
-- [ ] Define and populate initial tables
-  - [ ] Save this init.sql in dev/scripts
-- [ ] Setup Drizzle
+- [x] Create a dev folder. In it create a docker-compose.yaml which will contain a postgres db and pgadmin4
+  - [x] Configure a user with access limited to the public schema for the application to use
+- [x] Create in dev folder a .env example
+- [ ]Indicate in README.md the existence of this folder
+- [x] Define initial tables
+  - [x] Save this init.sql in dev/scripts
+- [x] Setup Drizzle
 
 ## Effect
 - [ ] Setup Effect - [Effect Docs](https://effect.website/docs)
