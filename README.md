@@ -55,10 +55,10 @@ everything needs to be a microservice" and that a well-architected system,
 ideally within a unified codebase and language, fosters easier understanding,
 faster development, and better maintainability. VISTA embodies the principle
 that **good code solves the problem and doesn't suck to read**. It's about
-delivering mature solutions, anticipating potential failures, and acknowledging
-that while AI excels at writing code, it's the developers who remain the
-essential "human glue" – the problem-solvers who translate ambiguous needs into
-tangible, efficient digital realities.
+delivering mature solutions, anticipating potential development bottlenecks, and
+acknowledging that while AI excels at writing code, it's the developers who
+remain the essential "human glue" – the problem-solvers who translate ambiguous
+needs into tangible, efficient digital realities.
 
 This project is also a dedicated effort to **step out of my comfort zone and
 practice technologies I don't typically use in my day-to-day work**. A major
@@ -87,7 +87,11 @@ as the project progresses.
 
 ## 4. Project Roadmap
 
-For a detailed view of the project's planned development tasks and milestones, please refer to our [ROADMAP.md](ROADMAP.md) file. This document serves as a guide for tracking progress and setting future goals, with a task-oriented approach that follows the project's learning objectives and implementation phases.
+For a detailed view of the project's planned development tasks and milestones,
+please refer to our [ROADMAP.md](ROADMAP.md) file. This document serves as a
+guide for tracking progress and setting future goals, with a task-oriented
+approach that follows the project's learning objectives and implementation
+phases.
 
 ## 5. Why VISTA?
 
@@ -105,25 +109,11 @@ For a detailed view of the project's planned development tasks and milestones, p
 This section will provide instructions on how to set up and run VISTA locally
 for development and testing purposes.
 
-1.  **Prerequisites:** Ensure you have Node.js (with npm or yarn) installed on
-    your system.
-2.  **Clone the Repository:**
-    ```bash
-    git clone https://github.com/franBec/vista
-    cd vista
-    ```
-3.  **Install Dependencies:**
-    ```bash
-    npm install # or yarn install
-    ```
-4.  **Run the Application:**
-    ```bash
-    npm run dev # or yarn dev
-    ```
-    VISTA should now be running locally, typically on `http://localhost:3000`.
+### Development Environment Setup
 
-_(Detailed instructions and specific commands will be refined as the project
-progresses.)_
+For detailed instructions on setting up your development environment, including
+database configuration with PostgreSQL and pgAdmin, please refer to our
+dedicated development README: [dev/README.md](dev/README.md)
 
 ## 7. Technology Stack
 
