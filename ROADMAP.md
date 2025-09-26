@@ -24,6 +24,8 @@ goals.
       content (title, description), if it requires login to be viewed, if it
       should be displayed in sidebar, etc. (add things as needed)
   - [x] Create a Sidebar that reads the routes
+- [x] Setup vitest
+  - [x] Determine what to test and what not 
 
 ## Auth: Clerk Initial Setup
 
@@ -48,7 +50,7 @@ goals.
   - [x] Configure a user with access limited to the public schema for the
         application to use
 - [x] Create in dev folder a .env example
-- [ ]Indicate in README.md the existence of this folder
+- [x] Indicate in README.md the existence of this folder
 - [x] Define initial tables
   - [x] Save this init.sql in dev/scripts
 - [x] Setup Drizzle
