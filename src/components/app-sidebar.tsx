@@ -27,7 +27,14 @@ import {
 } from "@/components/ui/tooltip";
 import { routes, RouteNode } from "@/lib/routes";
 
-function SidebarItem({ item }: { item: any }) {
+interface SidebarItemProps {
+  title: string;
+  url: string;
+  icon?: React.ComponentType<{ className?: string }>;
+  items?: SidebarItemProps[];
+}
+
+function SidebarItem({ item }: { item: SidebarItemProps }) {
   const hasChildren = item.items && item.items.length > 0;
 
   if (hasChildren) {
@@ -58,7 +65,7 @@ function SidebarItem({ item }: { item: any }) {
           </div>
           <CollapsibleContent>
             <SidebarMenuSub className="w-full">
-              {item.items.map((subItem: any) => (
+              {item.items?.map((subItem: SidebarItemProps) => (
                 <SidebarMenuSubItem key={subItem.url} className="w-full">
                   {subItem.items && subItem.items.length > 0 ? (
                     <Collapsible className="group/collapsible-sub w-full">
@@ -91,7 +98,7 @@ function SidebarItem({ item }: { item: any }) {
                       </div>
                       <CollapsibleContent>
                         <SidebarMenuSub className="w-full ml-0 pl-4">
-                          {subItem.items.map((nestedItem: any) => (
+                          {subItem.items.map((nestedItem: SidebarItemProps) => (
                             <SidebarMenuSubItem
                               key={nestedItem.url}
                               className="w-full"
@@ -166,12 +173,12 @@ function SidebarItem({ item }: { item: any }) {
 }
 
 function getSidebarRoutes() {
-  function convertRoute(route: RouteNode): any {
+  function convertRoute(route: RouteNode): SidebarItemProps | null {
     if (!route.doesDisplayInSidebar) {
       return null;
     }
 
-    const items: any[] = [];
+    const items: SidebarItemProps[] = [];
 
     if (route.children) {
       Object.values(route.children).forEach(child => {
@@ -190,7 +197,7 @@ function getSidebarRoutes() {
     };
   }
 
-  const navMain: any[] = [];
+  const navMain: SidebarItemProps[] = [];
 
   Object.values(routes).forEach(route => {
     const converted = convertRoute(route);

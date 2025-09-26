@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -34,9 +35,11 @@ export default function Home() {
       <div className="py-8">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-center">
-            <img
+            <Image
               src="/undraw_city-life_l74x.svg"
               alt="City life illustration"
+              width={1200}
+              height={600}
               className="w-full max-w-4xl"
             />
           </div>
