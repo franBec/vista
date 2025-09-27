@@ -1,4 +1,4 @@
-import { RoutePage } from "@/components/route-page";
+import { RoutePage } from "@/components/layout/route-page";
 
 export default function Page() {
   return <RoutePage.Auto uri="/areas/personal" />;

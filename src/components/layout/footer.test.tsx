@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
-import { Footer } from "@/components/footer";
+import { Footer } from "@/components/layout/footer";
 
 // Mock Next.js Link component
 vi.mock("next/link", () => ({

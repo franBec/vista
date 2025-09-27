@@ -1,5 +1,5 @@
 import { SignUp } from "@clerk/nextjs";
-import { RoutePage } from "@/components/route-page";
+import { RoutePage } from "@/components/layout/route-page";
 
 export default function Page() {
   return (

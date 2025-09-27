@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { render, screen } from "@testing-library/react";
-import { RoutePage } from "@/components/route-page";
+import { RoutePage } from "@/components/layout/route-page";
 
 // Mock Next.js Image component
 vi.mock("next/image", () => ({

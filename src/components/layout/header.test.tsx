@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { Header } from "@/components/header";
+import { Header } from "@/components/layout/header";
 
 // Mock the useSidebar hook
 const mockToggleSidebar = vi.fn();
