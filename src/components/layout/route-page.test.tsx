@@ -4,7 +4,19 @@ import { RoutePage } from "@/components/route-page";
 
 // Mock Next.js Image component
 vi.mock("next/image", () => ({
-  default: ({ src, alt, width, height, className }: { src: string; alt: string; width?: number; height?: number; className?: string } & React.ImgHTMLAttributes<HTMLImageElement>) => (
+  default: ({
+    src,
+    alt,
+    width,
+    height,
+    className,
+  }: {
+    src: string;
+    alt: string;
+    width?: number;
+    height?: number;
+    className?: string;
+  } & React.ImgHTMLAttributes<HTMLImageElement>) => (
     <div
       data-src={src}
       data-alt={alt}
@@ -18,7 +30,15 @@ vi.mock("next/image", () => ({
 
 // Mock Next.js Link component
 vi.mock("next/link", () => ({
-  default: ({ href, children, className }: { href: string; children: React.ReactNode; className?: string } & React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
+  default: ({
+    href,
+    children,
+    className,
+  }: {
+    href: string;
+    children: React.ReactNode;
+    className?: string;
+  } & React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
     <a href={href} className={className} data-testid="next-link">
       {children}
     </a>
@@ -27,27 +47,55 @@ vi.mock("next/link", () => ({
 
 // Mock the UI Card components
 vi.mock("@/components/ui/card", () => ({
-  Card: ({ children, className }: { children: React.ReactNode; className?: string } & React.HTMLAttributes<HTMLDivElement>) => (
+  Card: ({
+    children,
+    className,
+  }: {
+    children: React.ReactNode;
+    className?: string;
+  } & React.HTMLAttributes<HTMLDivElement>) => (
     <div className={className} data-testid="card">
       {children}
     </div>
   ),
-  CardHeader: ({ children, className }: { children: React.ReactNode; className?: string } & React.HTMLAttributes<HTMLDivElement>) => (
+  CardHeader: ({
+    children,
+    className,
+  }: {
+    children: React.ReactNode;
+    className?: string;
+  } & React.HTMLAttributes<HTMLDivElement>) => (
     <div className={className} data-testid="card-header">
       {children}
     </div>
   ),
-  CardTitle: ({ children, className }: { children: React.ReactNode; className?: string } & React.HTMLAttributes<HTMLHeadingElement>) => (
+  CardTitle: ({
+    children,
+    className,
+  }: {
+    children: React.ReactNode;
+    className?: string;
+  } & React.HTMLAttributes<HTMLHeadingElement>) => (
     <h3 className={className} data-testid="card-title">
       {children}
     </h3>
   ),
-  CardContent: ({ children, className }: { children: React.ReactNode; className?: string } & React.HTMLAttributes<HTMLDivElement>) => (
+  CardContent: ({
+    children,
+    className,
+  }: {
+    children: React.ReactNode;
+    className?: string;
+  } & React.HTMLAttributes<HTMLDivElement>) => (
     <div className={className} data-testid="card-content">
       {children}
     </div>
   ),
-  CardDescription: ({ children }: { children: React.ReactNode } & React.HTMLAttributes<HTMLParagraphElement>) => (
+  CardDescription: ({
+    children,
+  }: {
+    children: React.ReactNode;
+  } & React.HTMLAttributes<HTMLParagraphElement>) => (
     <p data-testid="card-description">{children}</p>
   ),
 }));
@@ -62,7 +110,15 @@ vi.mock("@/lib/routes", () => {
 
   return {
     findRouteByUri: vi.fn((uri: string) => {
-      const routes: Record<string, { name?: string; uri: string; icon?: React.ComponentType<{ className?: string }>; description?: string }> = {
+      const routes: Record<
+        string,
+        {
+          name?: string;
+          uri: string;
+          icon?: React.ComponentType<{ className?: string }>;
+          description?: string;
+        }
+      > = {
         "/": {
           name: "Home",
           uri: "/",
@@ -98,7 +154,9 @@ vi.mock("@/lib/routes", () => {
             name: "Government Areas",
             uri: "/areas/gov",
             description: "Government related areas",
-            icon: ({ className }: { className?: string } & React.SVGProps<SVGSVGElement>) => (
+            icon: ({
+              className,
+            }: { className?: string } & React.SVGProps<SVGSVGElement>) => (
               <svg className={className} data-testid="gov-icon">
                 <title>Gov Icon</title>
               </svg>
@@ -108,7 +166,9 @@ vi.mock("@/lib/routes", () => {
             name: "Personal Area",
             uri: "/areas/personal",
             description: "Personal information and settings",
-            icon: ({ className }: { className?: string } & React.SVGProps<SVGSVGElement>) => (
+            icon: ({
+              className,
+            }: { className?: string } & React.SVGProps<SVGSVGElement>) => (
               <svg className={className} data-testid="personal-icon">
                 <title>Personal Icon</title>
               </svg>
@@ -247,7 +307,9 @@ describe("RoutePage", () => {
           name: "Route 1",
           uri: "/route1",
           description: "First route description",
-          icon: ({ className }: { className?: string } & React.SVGProps<SVGSVGElement>) => (
+          icon: ({
+            className,
+          }: { className?: string } & React.SVGProps<SVGSVGElement>) => (
             <svg className={className} data-testid="route1-icon">
               <title>Route 1 Icon</title>
             </svg>
@@ -257,7 +319,9 @@ describe("RoutePage", () => {
           name: "Route 2",
           uri: "/route2",
           description: "Second route description",
-          icon: ({ className }: { className?: string } & React.SVGProps<SVGSVGElement>) => (
+          icon: ({
+            className,
+          }: { className?: string } & React.SVGProps<SVGSVGElement>) => (
             <svg className={className} data-testid="route2-icon">
               <title>Route 2 Icon</title>
             </svg>
@@ -463,7 +527,9 @@ describe("RoutePage Integration", () => {
             name: "Areas",
             uri: "/areas",
             description: "All areas",
-            icon: ({ className }: { className?: string } & React.SVGProps<SVGSVGElement>) => (
+            icon: ({
+              className,
+            }: { className?: string } & React.SVGProps<SVGSVGElement>) => (
               <svg className={className} data-testid="areas-icon">
                 <title>Areas Icon</title>
               </svg>

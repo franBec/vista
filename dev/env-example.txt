@@ -12,3 +12,7 @@ NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/areas
 
 # Database connection
 DATABASE_URL="postgresql://application_user:postgres_password@localhost:5432/postgres_db"
+
+# Otel
+OTEL_SERVICE_NAME="nextjs-app"
+OTEL_LOG_LEVEL=info

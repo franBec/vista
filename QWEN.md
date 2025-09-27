@@ -21,8 +21,10 @@ Prefer using shadcn components when possible for consistent UI
 
 ## Verification
 
-Avoid starting a development server to verify changes. Usually there's going to
-be a development server already running at port 3000
+- Avoid starting a development server to verify changes. Usually there's going
+  to be a development server already running at port 3000
+- If a development server was started at port 3000, drop it after changes were
+  verified
 
 ## **React Component Testing Approach**
 

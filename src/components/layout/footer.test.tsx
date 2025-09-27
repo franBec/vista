@@ -4,7 +4,19 @@ import { Footer } from "@/components/footer";
 
 // Mock Next.js Link component
 vi.mock("next/link", () => ({
-  default: ({ href, children, className, target, rel }: { href: string; children: React.ReactNode; className?: string; target?: string; rel?: string }) => (
+  default: ({
+    href,
+    children,
+    className,
+    target,
+    rel,
+  }: {
+    href: string;
+    children: React.ReactNode;
+    className?: string;
+    target?: string;
+    rel?: string;
+  }) => (
     <a
       href={href}
       className={className}

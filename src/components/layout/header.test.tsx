@@ -35,7 +35,20 @@ vi.mock("@/components/theme/mode-toggle", () => ({
 
 // Mock UI Button component
 vi.mock("@/components/ui/button", () => ({
-  Button: ({ children, onClick, variant, size, className, ...props }: { children: React.ReactNode; onClick?: () => void; variant?: string; size?: string; className?: string } & React.ButtonHTMLAttributes<HTMLButtonElement>) => (
+  Button: ({
+    children,
+    onClick,
+    variant,
+    size,
+    className,
+    ...props
+  }: {
+    children: React.ReactNode;
+    onClick?: () => void;
+    variant?: string;
+    size?: string;
+    className?: string;
+  } & React.ButtonHTMLAttributes<HTMLButtonElement>) => (
     <button
       onClick={onClick}
       data-variant={variant}
@@ -51,7 +64,15 @@ vi.mock("@/components/ui/button", () => ({
 
 // Mock Next.js Link
 vi.mock("next/link", () => ({
-  default: ({ href, children, className }: { href: string; children: React.ReactNode; className?: string } & React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
+  default: ({
+    href,
+    children,
+    className,
+  }: {
+    href: string;
+    children: React.ReactNode;
+    className?: string;
+  } & React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
     <a href={href} className={className} data-testid="next-link">
       {children}
     </a>
@@ -60,12 +81,16 @@ vi.mock("next/link", () => ({
 
 // Mock Lucide icons
 vi.mock("lucide-react", () => ({
-  Building: ({ className }: { className?: string } & React.SVGProps<SVGSVGElement>) => (
+  Building: ({
+    className,
+  }: { className?: string } & React.SVGProps<SVGSVGElement>) => (
     <svg className={className} data-testid="building-icon">
       <title>Building</title>
     </svg>
   ),
-  PanelLeft: ({ className }: { className?: string } & React.SVGProps<SVGSVGElement>) => (
+  PanelLeft: ({
+    className,
+  }: { className?: string } & React.SVGProps<SVGSVGElement>) => (
     <svg className={className} data-testid="panel-left-icon">
       <title>Panel Left</title>
     </svg>

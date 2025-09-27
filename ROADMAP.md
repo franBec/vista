@@ -25,7 +25,7 @@ goals.
       should be displayed in sidebar, etc. (add things as needed)
   - [x] Create a Sidebar that reads the routes
 - [x] Setup vitest
-  - [x] Determine what to test and what not 
+  - [x] Determine what to test and what not
 
 ## Auth: Clerk Initial Setup
 

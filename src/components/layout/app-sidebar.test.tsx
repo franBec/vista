@@ -7,7 +7,14 @@ import { AppSidebar } from "./app-sidebar";
 vi.mock("next/link", async () => {
   const React = await import("react");
   return {
-    default: ({ href, children, ...props }: { href: string; children: React.ReactNode } & React.HTMLAttributes<HTMLAnchorElement>) => (
+    default: ({
+      href,
+      children,
+      ...props
+    }: {
+      href: string;
+      children: React.ReactNode;
+    } & React.HTMLAttributes<HTMLAnchorElement>) => (
       <a href={href} {...props}>
         {children}
       </a>
@@ -19,17 +26,32 @@ vi.mock("next/link", async () => {
 vi.mock("@/components/ui/collapsible", async () => {
   const React = await import("react");
   return {
-    Collapsible: ({ children, ...props }: { children: React.ReactNode } & React.HTMLAttributes<HTMLDivElement>) => (
+    Collapsible: ({
+      children,
+      ...props
+    }: {
+      children: React.ReactNode;
+    } & React.HTMLAttributes<HTMLDivElement>) => (
       <div data-testid="collapsible" {...props}>
         {children}
       </div>
     ),
-    CollapsibleContent: ({ children, ...props }: { children: React.ReactNode } & React.HTMLAttributes<HTMLDivElement>) => (
+    CollapsibleContent: ({
+      children,
+      ...props
+    }: {
+      children: React.ReactNode;
+    } & React.HTMLAttributes<HTMLDivElement>) => (
       <div data-testid="collapsible-content" {...props}>
         {children}
       </div>
     ),
-    CollapsibleTrigger: ({ children, ...props }: { children: React.ReactNode } & React.HTMLAttributes<HTMLDivElement>) => (
+    CollapsibleTrigger: ({
+      children,
+      ...props
+    }: {
+      children: React.ReactNode;
+    } & React.HTMLAttributes<HTMLDivElement>) => (
       // Fixed: avoid nested button issue by using a div
       <div data-testid="collapsible-trigger" {...props}>
         {children}
@@ -41,7 +63,14 @@ vi.mock("@/components/ui/collapsible", async () => {
 vi.mock("@/components/ui/sidebar", async () => {
   const React = await import("react");
   return {
-    Sidebar: ({ children, className, ...props }: { children: React.ReactNode; className?: string } & React.HTMLAttributes<HTMLElement>) => (
+    Sidebar: ({
+      children,
+      className,
+      ...props
+    }: {
+      children: React.ReactNode;
+      className?: string;
+    } & React.HTMLAttributes<HTMLElement>) => (
       <div
         data-testid="sidebar"
         className={className}
@@ -51,42 +80,70 @@ vi.mock("@/components/ui/sidebar", async () => {
         {children}
       </div>
     ),
-    SidebarContent: ({ children, ...props }: { children: React.ReactNode } & React.HTMLAttributes<HTMLElement>) => (
+    SidebarContent: ({
+      children,
+      ...props
+    }: { children: React.ReactNode } & React.HTMLAttributes<HTMLElement>) => (
       <div data-testid="sidebar-content" {...props}>
         {children}
       </div>
     ),
-    SidebarGroup: ({ children, ...props }: { children: React.ReactNode } & React.HTMLAttributes<HTMLElement>) => (
+    SidebarGroup: ({
+      children,
+      ...props
+    }: { children: React.ReactNode } & React.HTMLAttributes<HTMLElement>) => (
       <div data-testid="sidebar-group" {...props}>
         {children}
       </div>
     ),
-    SidebarMenu: ({ children, ...props }: { children: React.ReactNode } & React.HTMLAttributes<HTMLElement>) => (
+    SidebarMenu: ({
+      children,
+      ...props
+    }: { children: React.ReactNode } & React.HTMLAttributes<HTMLElement>) => (
       <ul data-testid="sidebar-menu" {...props}>
         {children}
       </ul>
     ),
-    SidebarMenuButton: ({ children, ...props }: { children: React.ReactNode } & React.ButtonHTMLAttributes<HTMLButtonElement>) => (
+    SidebarMenuButton: ({
+      children,
+      ...props
+    }: {
+      children: React.ReactNode;
+    } & React.ButtonHTMLAttributes<HTMLButtonElement>) => (
       <button data-testid="sidebar-menu-button" {...props}>
         {children}
       </button>
     ),
-    SidebarMenuItem: ({ children, ...props }: { children: React.ReactNode } & React.LiHTMLAttributes<HTMLElement>) => (
+    SidebarMenuItem: ({
+      children,
+      ...props
+    }: { children: React.ReactNode } & React.LiHTMLAttributes<HTMLElement>) => (
       <li data-testid="sidebar-menu-item" {...props}>
         {children}
       </li>
     ),
-    SidebarMenuSub: ({ children, ...props }: { children: React.ReactNode } & React.HTMLAttributes<HTMLElement>) => (
+    SidebarMenuSub: ({
+      children,
+      ...props
+    }: { children: React.ReactNode } & React.HTMLAttributes<HTMLElement>) => (
       <ul data-testid="sidebar-menu-sub" {...props}>
         {children}
       </ul>
     ),
-    SidebarMenuSubButton: ({ children, ...props }: { children: React.ReactNode } & React.ButtonHTMLAttributes<HTMLButtonElement>) => (
+    SidebarMenuSubButton: ({
+      children,
+      ...props
+    }: {
+      children: React.ReactNode;
+    } & React.ButtonHTMLAttributes<HTMLButtonElement>) => (
       <button data-testid="sidebar-menu-sub-button" {...props}>
         {children}
       </button>
     ),
-    SidebarMenuSubItem: ({ children, ...props }: { children: React.ReactNode } & React.LiHTMLAttributes<HTMLElement>) => (
+    SidebarMenuSubItem: ({
+      children,
+      ...props
+    }: { children: React.ReactNode } & React.LiHTMLAttributes<HTMLElement>) => (
       <li data-testid="sidebar-menu-sub-item" {...props}>
         {children}
       </li>
@@ -98,17 +155,34 @@ vi.mock("@/components/ui/sidebar", async () => {
 vi.mock("@/components/ui/tooltip", async () => {
   const React = await import("react");
   return {
-    Tooltip: ({ children, ...props }: { children: React.ReactNode } & React.HTMLAttributes<HTMLDivElement>) => (
+    Tooltip: ({
+      children,
+      ...props
+    }: {
+      children: React.ReactNode;
+    } & React.HTMLAttributes<HTMLDivElement>) => (
       <div data-testid="tooltip" {...props}>
         {children}
       </div>
     ),
-    TooltipContent: ({ children, ...props }: { children: React.ReactNode } & React.HTMLAttributes<HTMLDivElement>) => (
+    TooltipContent: ({
+      children,
+      ...props
+    }: {
+      children: React.ReactNode;
+    } & React.HTMLAttributes<HTMLDivElement>) => (
       <div data-testid="tooltip-content" {...props}>
         {children}
       </div>
     ),
-    TooltipProvider: ({ children, delayDuration, ...props }: { children: React.ReactNode; delayDuration?: number } & React.HTMLAttributes<HTMLDivElement>) => (
+    TooltipProvider: ({
+      children,
+      delayDuration,
+      ...props
+    }: {
+      children: React.ReactNode;
+      delayDuration?: number;
+    } & React.HTMLAttributes<HTMLDivElement>) => (
       <div
         data-testid="tooltip-provider"
         delayduration={delayDuration}
@@ -117,7 +191,12 @@ vi.mock("@/components/ui/tooltip", async () => {
         {children}
       </div>
     ),
-    TooltipTrigger: ({ children, ...props }: { children: React.ReactNode } & React.HTMLAttributes<HTMLDivElement>) => (
+    TooltipTrigger: ({
+      children,
+      ...props
+    }: {
+      children: React.ReactNode;
+    } & React.HTMLAttributes<HTMLDivElement>) => (
       <div data-testid="tooltip-trigger" {...props}>
         {children}
       </div>
