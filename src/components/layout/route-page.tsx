@@ -1,6 +1,7 @@
-import { findRouteByUri, getChildRoutes, RouteNode } from "@/lib/routes";
 import { ReactNode } from "react";
 import Image from "next/image";
+import Link from "next/link";
+
 import {
   Card,
   CardContent,
@@ -8,7 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import Link from "next/link";
+import { findRouteByUri, getChildRoutes, RouteNode } from "@/lib/routes";
 
 interface RoutePageProps {
   uri: string;

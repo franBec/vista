@@ -1,9 +1,7 @@
-# Build artifacts
-.next
-out
-
-# Dependencies
-node_modules
+/node_modules
+/.next
+/out
+/build
 
 # Logs
 *.log
@@ -22,8 +20,11 @@ node_modules
 Thumbs.db
 
 # shadcn components
-src/components/theme
-src/components/ui
+/src/components/theme
+/src/components/ui
+/src/hooks/use-mobile.ts
+/src/lib/utils.ts
 
-# drizzle pull generated files
-drizzle
+# drizzle
+drizzle.config.ts
+/drizzle

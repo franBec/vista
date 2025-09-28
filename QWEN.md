@@ -325,11 +325,12 @@ it("should hide content when user is not authenticated", () => {});
 
 ```tsx
 // utilities.test.ts
-import { describe, it, expect } from "vitest";
+import { describe, expect, it } from "vitest";
+
 import {
-  mainFunction,
-  helperFunction,
   constants,
+  helperFunction,
+  mainFunction,
   type TypeDefinition,
 } from "./utilities";
 

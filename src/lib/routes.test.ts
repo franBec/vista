@@ -1,24 +1,25 @@
-import { describe, it, expect } from "vitest";
 import {
-  routes,
-  findRouteByUri,
-  getChildRoutes,
-  type RouteNode,
-} from "@/lib/routes";
-import {
+  Bell,
   Building,
   Bus,
-  Users,
-  Scale,
-  Landmark,
-  Gavel,
   FileText,
-  User,
-  Bell,
+  Gavel,
   Home,
+  Landmark,
   LogIn,
+  Scale,
+  User,
   UserPlus,
+  Users,
 } from "lucide-react";
+import { describe, expect, it } from "vitest";
+
+import {
+  findRouteByUri,
+  getChildRoutes,
+  routes,
+  type RouteNode,
+} from "@/lib/routes";
 
 describe("routes configuration", () => {
   it("should have the correct structure for root route", () => {

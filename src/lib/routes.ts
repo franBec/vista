@@ -1,16 +1,16 @@
 import {
+  Bell,
   Building,
   Bus,
-  Users,
-  Scale,
-  Landmark,
-  Gavel,
   FileText,
-  User,
-  Bell,
+  Gavel,
   Home,
+  Landmark,
   LogIn,
+  Scale,
+  User,
   UserPlus,
+  Users,
 } from "lucide-react";
 
 export interface RouteNode {

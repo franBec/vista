@@ -25,7 +25,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { routes, RouteNode } from "@/lib/routes";
+import { RouteNode, routes } from "@/lib/routes";
 
 interface SidebarItemProps {
   title: string;

@@ -1,7 +1,6 @@
 "use client";
 
-import { Building, PanelLeft } from "lucide-react";
-import { ModeToggle } from "@/components/theme/mode-toggle";
+import Link from "next/link";
 import {
   SignedIn,
   SignedOut,
@@ -9,9 +8,11 @@ import {
   SignUpButton,
   UserButton,
 } from "@clerk/nextjs";
+import { Building, PanelLeft } from "lucide-react";
+
+import { ModeToggle } from "@/components/theme/mode-toggle";
 import { Button } from "@/components/ui/button";
 import { useSidebar } from "@/components/ui/sidebar";
-import Link from "next/link";
 
 export function Header() {
   const { toggleSidebar } = useSidebar();
